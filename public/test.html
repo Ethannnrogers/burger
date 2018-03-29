@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eat-Da-Buger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
+</head>
+<body>
+        <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                          <img src="/assets/img/burger.png" width="200" height="200"/>
+                    </div>
+                  </div>
+            
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                          <h1>Eat-Da-Burger!</h1>
+                    </div>
+                  </div>
+            
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h2>Tasty Burgers!</h2>
+                        <ol>
+                        </ol>				
+                    </div>			
+            
+                    <div class="col-md-6 text-center">
+                        <h2>Devoured Burgers!</h2>
+                        <ol>
+                        </ol>
+                    </div>	
+                  </div>
+            
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Add a Burger</h1>
+                        <form class="create-update-form" action="burgers/create" method="POST">
+            
+                            <div class="form-group">
+                                <label for="burger">Burger Name:</label>
+                                <input type="text" id="burger" name="name">
+                            </div>
+            
+                            <button type="submit" class="btn btn-primary">Add Burger</button>
+                        </form>
+                    </div>
+                  </div>
+            
+            
+            </div>
+    
+</body>
+</html>

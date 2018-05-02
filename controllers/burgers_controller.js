@@ -19,7 +19,7 @@ router.get('/burgers', function(req, res) {
 
 router.post('/burgers/create', function (req, res) {
 	burger.insertOne('burgers', req.body.burger_name, function () {
-		//res.redirect('/burgers');
+		res.redirect('/burgers');
 	});
 });
 
@@ -31,7 +31,7 @@ router.put('/burgers/update/:id', function (req, res) {
         }, 
         condition,
         function (result) {
-        //res.redirect('/burgers');
+        res.redirect('/burgers');
         if (result.changedRows === 0) {
             return res.status(404).end();
         }
